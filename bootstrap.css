@@ -203,3 +203,7 @@ button {
   margin-top: 70px;
   margin-left: 100px;
 }
+/*포트폴리오 이미지 크기*/
+#pptnum {
+  width: 33%;
+}
