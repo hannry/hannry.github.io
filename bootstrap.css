@@ -447,7 +447,7 @@ button {
 #call {
   text-align: center;
   display: block;
-  background-color: rgb(182, 137, 94);
+  background-color: rgba(13, 97, 10, 0.548);
 }
 #call img {
   height: 25vw;
