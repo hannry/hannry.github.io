@@ -13,6 +13,23 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.7.3/jarallax.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.7.3/jarallax-video.min.js'></script>
 
+  <!-- 제이쿼리 불러오기 -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <!--슬릭 불러오기-->
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <style type="text/css">
+  <!--슬라이더 버튼-->
+  <style>
+    .visual { position: relative;}
+    .visual button {position: absolute; ,z-index: 10;}
+
+  </style>
 
 <body>
   <header> <!-- 헤더를 만들어 보자-->
@@ -37,7 +54,19 @@
   <main>
     <div class="container">
       <div class="portfolio">
-        <a href="portfolio1.html"><img id="pptnum" src="./포폴이미지/프로젝트 1차.JPG"></a><a href="portfolio23.html"><img id="pptnum" src="./포폴이미지/프로젝트 2차.JPG"></a><a href="portfolio23.html"><img id="pptnum" src="./포폴이미지/프로젝트 3차.JPG"></a>
+        <section class="regular slider">
+          <div>
+            <a href="projectSelect.html"><img src="./포폴이미지/프로젝트 썸네일.jpg"></a>
+          </div>
+          <div>
+            <a href="portfolio1.html"><img src="./포폴이미지/1차-1.jpg"></a>
+  
+          </div>
+          <div>
+            <a href="portfolio23.html"><img src="./포폴이미지/입소문.JPG"></a>
+          </div>
+        </section>
+        <img src="./포폴이미지/23차-1.JPG">
         <img src="./포폴이미지/01기획.jpg">
         <img src="./포폴이미지/제안배경.jpg">
         <img src="./포폴이미지/조사 및 분석.jpg">
@@ -79,6 +108,17 @@
     </div>
    </div>
   </footer>
+  <script type="text/javascript">
+    $(".regular").slick({
+    dots: true,
+    infinite: true,
+    speed: 80,
+    arrows : true,
+    slidesToShow: 1,
+    adaptiveHeight: true
+    
+  });
+    </script>
 </body>
 <!-- 비디오를 위한 jquery plugin 호출 -->
 

@@ -138,7 +138,7 @@
   }
   .jarallax {
     width: 1440px;
-    height: 400px;
+    height: 40s0px;
   }
   .headBottom {
     width: 1440px;
@@ -166,16 +166,17 @@ header {
 }
 .headBottom {
   background-color: rgb(110, 50, 26);
-  height: 70px;
   color: white;
-  margin: 0 auto;
   text-align: center;
   opacity: 80%;
   background-clip: content-box;
+  margin: 0 auto;
 }
 .headBottom p {
-  font-size: 1.2vw;
-  padding: 20px;
+  font-size: 2vw;
+
+  display: inline;
+  top: 50%;
   animation-duration: 2s;
   animation-name: surprise2;
 }
@@ -184,17 +185,18 @@ header {
   .container-fluid {
     height: 300px;
   }
-  .navbar {
+  /* .navbar {
     background-color: black;
   }
   #navBtn {
     z-index: 4;
-  }
+  } */
   #menu {
     padding: 0;
   }
   #menu li {
     border-top: 1px solid rgb(100, 100, 100);
+    background-color: rgba(82, 3, 3, 0.24);
   }
   #menu li a {
     margin-left: 40%;
@@ -239,7 +241,7 @@ header {
   display: inline;
   font-size: 2vw;
   font-style: normal;
-  font-family: ;
+  font-family: Nunito Sans;
   color: rgb(255, 255, 255);
   opacity: initial;
   position: relative;
@@ -332,3 +334,8 @@ button {
 #pptnum {
   width: 33%;
 }
+/*슬라이더 크기*/
+.slider {
+  position: relative;
+}
+/*인트로 페이지*/
