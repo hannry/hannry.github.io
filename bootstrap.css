@@ -17,6 +17,15 @@
     width: 320px;
     height: 180px;
   }
+  #head {
+    width: 320px;
+  }
+  .foot {
+    width: 320px;
+  }
+  .main1 {
+    width: 320px;
+  }
 }
 @media (min-width: 375px) {
   .container {
@@ -35,6 +44,15 @@
   #youtube {
     width: 375px;
     height: 211px;
+  }
+  #head {
+    width: 375px;
+  }
+  .foot {
+    width: 375px;
+  }
+  .main1 {
+    width: 375px;
   }
 }
 @media (min-width: 425px) {
@@ -55,6 +73,15 @@
     width: 425px;
     height: 239px;
   }
+  #head {
+    width: 425px;
+  }
+  .foot {
+    width: 425px;
+  }
+  .main1 {
+    width: 425px;
+  }
 }
 @media (min-width: 576px) {
   .container {
@@ -73,6 +100,15 @@
   #youtube {
     width: 576px;
     height: 324px;
+  }
+  #head {
+    width: 576px;
+  }
+  .foot {
+    width: 576px;
+  }
+  .main1 {
+    width: 576px;
   }
 }
 @media (min-width: 768px) {
@@ -93,6 +129,15 @@
     width: 768px;
     height: 432px;
   }
+  #head {
+    width: 768px;
+  }
+  .foot {
+    width: 768px;
+  }
+  .main1 {
+    width: 768px;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -111,6 +156,15 @@
   #youtube {
     width: 992px;
     height: 558px;
+  }
+  #head {
+    width: 992px;
+  }
+  .foot {
+    width: 992px;
+  }
+  .main1 {
+    width: 992px;
   }
 }
 @media (min-width: 1200px) {
@@ -131,6 +185,15 @@
     width: 1200px;
     height: 675px;
   }
+  #head {
+    width: 1200px;
+  }
+  .foot {
+    width: 1200px;
+  }
+  .main1 {
+    width: 1200px;
+  }
 }
 @media (min-width: 1440px) {
   .container {
@@ -150,8 +213,58 @@
     width: 1440px;
     height: 810px;
   }
+  #head {
+    width: 1440px;
+  }
+  .foot {
+    width: 1440px;
+  }
+  .main1 {
+    width: 1440px;
+  }
 }
+#navBtn {
+  position: absolute;
+  right: 5%;
+  animation-name: surprise;
+  display: none;
+}
+/*메뉴버튼*/
+#menu {
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.541);
+  display: flex;
+  justify-content: space-between;
+}
+#menu li {
+  display: inline-table;
+  margin: 0 auto;
+  font-style: normal;
+  list-style-type: none;
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: transparent;
+  animation-duration: 2s;
+  animation-name: surprise2;
+}
+#menu li a {
+  margin: 0 auto;
+  text-decoration: none;
+  display: inline;
+  font-size: 2vw;
+  font-style: normal;
+  font-family: Nunito Sans;
+  color: rgb(255, 255, 255);
+  opacity: initial;
+  position: relative;
+  top: 25%;
+}
+#menu li a:hover {
+  font-size: 3vw;
 
+  opacity: initial;
+}
 /*상태바 설정*/
 .status {
   font-size: 2vw;
@@ -185,72 +298,41 @@ header {
   .container-fluid {
     height: 300px;
   }
-  /* .navbar {
-    background-color: black;
-  }
+
   #navBtn {
-    z-index: 4;
-  } */
+    display: block;
+  }
   #menu {
     padding: 0;
+    flex-direction: column;
+    height: 100%;
   }
   #menu li {
     border-top: 1px solid rgb(100, 100, 100);
     background-color: rgba(82, 3, 3, 0.24);
+    margin: 0;
+    height: 100%;
   }
   #menu li a {
-    margin-left: 40%;
+    top: 50%;
+    display: block;
+  }
+  .navbar {
+    height: 100%;
+    margin: 0px;
+    display: none;
+  }
+  .navbar.active {
+    display: flex;
   }
 }
-.navbar {
-  height: 100%;
-  border: 0px;
-  margin: 0px;
-}
-#navBtn {
-  position: absolute;
-  right: 1px;
-  animation-name: surprise;
-}
+
 .container-fluid {
   margin: 0;
   border: 0;
   padding-right: 0px;
   padding-left: 0px;
   display: contents;
-}
-/*메뉴버튼*/
-#menu {
-  text-align: center;
-  height: 100%;
-  background-color: transparent;
-  opacity: 90%;
-}
-#menu li {
-  display: flex;
-
-  font-style: normal;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  height: 33%;
-  animation-duration: 2s;
-  animation-name: surprise2;
-}
-#menu li a {
-  text-decoration: none;
-  display: inline;
-  font-size: 2vw;
-  font-style: normal;
-  font-family: Nunito Sans;
-  color: rgb(255, 255, 255);
-  opacity: initial;
-  position: relative;
-  top: 50%;
-}
-#menu li a:hover {
-  font-size: 3vw;
-
-  opacity: initial;
 }
 
 /* 메뉴글씨 에니메이션 넣기 */
@@ -322,8 +404,13 @@ button {
   color: white;
   text-align: center;
   font-size: 1vw;
+  bottom: 0%;
+  margin: 0 auto;
 }
-
+.foot span {
+  position: relative;
+  top: 50%;
+}
 .footIcon img {
   width: 60px;
   top: 100px;
@@ -338,4 +425,39 @@ button {
 .slider {
   position: relative;
 }
-/*인트로 페이지*/
+/*헤드*/
+#head {
+  margin: 0 auto;
+  position: sticky;
+  display: flex;
+  background-color: black;
+  height: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+#head p {
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: right;
+  font-size: 1.9vw;
+}
+#hamberger {
+  right: 0%;
+}
+#call {
+  text-align: center;
+  display: block;
+  background-color: rgb(182, 137, 94);
+}
+#call img {
+  height: 25vw;
+  opacity: 80%;
+  margin: 50px;
+  background-color: transparent;
+}
+#call a {
+  display: contents;
+}
+.main1 {
+  margin: 0 auto;
+}

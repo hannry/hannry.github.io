@@ -23,25 +23,22 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-  <style type="text/css">
-  <!--슬라이더 버튼-->
-  <style>
-    .visual { position: relative;}
-    .visual button {position: absolute; ,z-index: 10;}
+  <style type="text/css"></style>
 
-  </style>
-  </head>
+</head>
 
 <body>
   <header> <!-- 헤더를 만들어 보자-->
     <div class="container-fluid">
+      <div id="head"><a id="navBtn" href="#"><img id="hamberger" src="/포폴이미지/navBtn.png" color="white"></a></div>
       <div class='jarallax' data-jarallax-video='https://www.youtube.com/watch?v=5qap5aO4i9A&ab_channel=LofiGirl'>
         <div><a id="navBtn" href=""><img src="/포폴이미지/navBtn.png" color="white"></a></div>
-        <nav class="navbar">
+        <nav class="navbar" style="border: 0;">
           <ul id="menu">
+            <li><a href="main.html">홈</a></li> 
             <li><a href="index.html">프로필</a></li>
             <li><a href="introduce.html">자기소개</a></li>
-            <li><a href="portfolio1.html">포트폴리오</a></li>
+            <li><a href="projectSelect.html">포트폴리오</a></li>
           </ul>
         </nav>
       </div>    
@@ -89,7 +86,7 @@
   <footer>
    <div class="container-fluid">
     <div class="foot">
-      <span>^_^</span>
+      <span>포트폴리오를 위한 사이트입니다.</span>
     </div>
    </div>
   </footer>
@@ -104,6 +101,7 @@
   
 });
   </script>
+  <script type="text/javascript" src="nav.js?ver=1" defer></script>
 </body>
 <!--슬릭 슬라이더 설정값들-->
 
