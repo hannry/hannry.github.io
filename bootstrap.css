@@ -3,66 +3,155 @@
   .container {
     width: 320px;
   }
+  .jarallax {
+    width: 320px;
+    height: 180px;
+  }
+  .headBottom {
+    width: 320px;
+  }
   #menu {
     width: 320px;
+  }
+  #youtube {
+    width: 320px;
+    height: 180px;
   }
 }
 @media (min-width: 375px) {
   .container {
     width: 375px;
   }
+  .jarallax {
+    width: 375px;
+    height: 211px;
+  }
+  .headBottom {
+    width: 375px;
+  }
   #menu {
     width: 375px;
+  }
+  #youtube {
+    width: 375px;
+    height: 211px;
   }
 }
 @media (min-width: 425px) {
   .container {
     width: 425px;
   }
+  .jarallax {
+    width: 425px;
+    height: 239px;
+  }
+  .headBottom {
+    width: 425px;
+  }
   #menu {
     width: 425px;
+  }
+  #youtube {
+    width: 425px;
+    height: 239px;
   }
 }
 @media (min-width: 576px) {
   .container {
     width: 576px;
   }
+  .jarallax {
+    width: 576px;
+    height: 324px;
+  }
+  .headBottom {
+    width: 576px;
+  }
   #menu {
     width: 576px;
+  }
+  #youtube {
+    width: 576px;
+    height: 324px;
   }
 }
 @media (min-width: 768px) {
   .container {
     width: 768px;
   }
+  .jarallax {
+    width: 768px;
+    height: 320px;
+  }
+  .headBottom {
+    width: 768px;
+  }
   #menu {
     width: 768px;
+  }
+  #youtube {
+    width: 768px;
+    height: 432px;
   }
 }
 @media (min-width: 992px) {
   .container {
     width: 992px;
   }
+  .jarallax {
+    width: 992px;
+    height: 350px;
+  }
+  .headBottom {
+    width: 992px;
+  }
   #menu {
     width: 992px;
+  }
+  #youtube {
+    width: 992px;
+    height: 558px;
   }
 }
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
   }
+  .jarallax {
+    width: 1200px;
+    height: 400px;
+  }
+  .headBottom {
+    width: 1200px;
+  }
   #menu {
     width: 1200px;
+  }
+  #youtube {
+    width: 1200px;
+    height: 675px;
   }
 }
 @media (min-width: 1440px) {
   .container {
     width: 1440px;
   }
+  .jarallax {
+    width: 1440px;
+    height: 400px;
+  }
+  .headBottom {
+    width: 1440px;
+  }
   #menu {
     width: 1440px;
   }
+  #youtube {
+    width: 1440px;
+    height: 810px;
+  }
 }
+
 /*상태바 설정*/
 .status {
   font-size: 2vw;
@@ -71,7 +160,7 @@
 
 /*헤더 설정*/
 header {
-  height: 700px;
+  height: 100%;
   animation-duration: 3s;
   animation-name: surprise;
 }
@@ -79,9 +168,10 @@ header {
   background-color: rgb(110, 50, 26);
   height: 70px;
   color: white;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin: 0 auto;
   text-align: center;
+  opacity: 80%;
+  background-clip: content-box;
 }
 .headBottom p {
   font-size: 1.2vw;
@@ -90,23 +180,57 @@ header {
   animation-name: surprise2;
 }
 /*navbar 설정*/
-
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    height: 300px;
+  }
+  .navbar {
+    background-color: black;
+  }
+  #navBtn {
+    z-index: 4;
+  }
+  #menu {
+    padding: 0;
+  }
+  #menu li {
+    border-top: 1px solid rgb(100, 100, 100);
+  }
+  #menu li a {
+    margin-left: 40%;
+  }
+}
+.navbar {
+  height: 100%;
+  border: 0px;
+  margin: 0px;
+}
+#navBtn {
+  position: absolute;
+  right: 1px;
+  animation-name: surprise;
+}
+.container-fluid {
+  margin: 0;
+  border: 0;
+  padding-right: 0px;
+  padding-left: 0px;
+  display: contents;
+}
 /*메뉴버튼*/
 #menu {
-  margin-top: 100px;
   text-align: center;
-  height: 150px;
+  height: 100%;
   background-color: transparent;
-
   opacity: 90%;
 }
 #menu li {
   display: flex;
-  padding-left: 75px;
+
   font-style: normal;
   color: rgb(255, 255, 255);
-  line-height: 150px;
   text-align: center;
+  height: 33%;
   animation-duration: 2s;
   animation-name: surprise2;
 }
@@ -117,12 +241,13 @@ header {
   font-style: normal;
   font-family: ;
   color: rgb(255, 255, 255);
-  line-height: 150px;
   opacity: initial;
+  position: relative;
+  top: 50%;
 }
 #menu li a:hover {
   font-size: 3vw;
-  line-height: 150px;
+
   opacity: initial;
 }
 
@@ -154,8 +279,8 @@ header {
 
 /*헤더 영상*/
 .jarallax {
-  height: 600px;
   position: relative;
+  margin: 0 auto;
 }
 /*버튼 속성*/
 button {
